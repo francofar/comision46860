@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*navegador */
+.containerGrid{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 7% 1fr 5%;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+header{
+    background-color: lightslategray;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-area: header;
+}
+
+.navUno li a {
+    color:yellow;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+li {
+    list-style: none;   
+
+}
+.navBar {
+    background-color: lightslategray;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    font-size: 25px;
+
+}
+.navBar li a {
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-decoration: none;
+color: yellow;
+text-transform: capitalize;
+
+}
+/** main **/
+/**banner**/
+
+main{
+    grid-area: main;
+}
+body {
+    background-color: lightgrey;
+}
+
+.logobarber{
+    width: 9.375rem;
+}
+.fotobarber {
+    width: 18.75rem;
+}
+.fondo1 {
+    width: 100%;
+    background-image: url(../assets/img/logobarber.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galeria {
+    width: 25rem;
+
+}
+.gridCards{
+    display: grid;
+    width: 100%;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "grid-1 grid-2 grid-3"
+    "grid-4 grid-5 grid-6"
+    ;
+
+
+}
+.productos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    width: 18.75rem;
+    height: 21.875rem;
+    border: 1px solid ;
+    margin: 10px;
+    border-radius: .3125rem;
+
+} 
+.productos h2 {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+.productos p {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.productos img { 
+    width: 80%;
+
+}
+.nosotrosPrincipal {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.nosotrosPrincipal h1 {
+    text-align: center;
+    color: yellow;
+    font-size: 5rem;
+    text-transform: capitalize;
+    background-color: black;
+}
+.gridNosotros {
+display: grid;
+width: 100%;
+grid-template-columns:1fr 1fr;
+grid-template-rows:1fr 1fr;
+grid-template-areas:
+"cardNosotros-1 cardNosotros-2"
+"cardNosotros-3 cardNosotros-2"
+;
+}
+.cardNosotros-1{
+    grid-area: cardNosotros-1;
+}
+.cardNosotros-2{
+    grid-area: cardNosotros-2;
+}
+.cardNosotros-3{
+    grid-area:cardNosotros-3;
+}
+
+.nosotrosSecundario {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nosotrosSecundario h2 {
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50;
+}
+.nosotrosSecundario h2 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.fotos{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.formulario {  
+    height: 11rem;
+    width: 15rem;
+
+}
+
+.cardFormulario{
+    width: 31.25rem;
+    margin: 10px;
+}
+.consulta{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/**footer**/
+footer{
+    grid-area: footer;
+}
+.footerIndex{
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1.25rem;
+}
+.contacto{
+    display: flex;
+    align-items: center;
+}
+footer div p {
+    color:yellow;
+    padding: bottom .625rem;
+}
+.logo {
+    width: 30px;
+    height: 30px; 
+}
+.footerSecundario {
+    background-color: lightslategray;
+}
